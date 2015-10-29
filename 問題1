@@ -1,0 +1,45 @@
+Enter file contents herepackage algo;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class question1 {
+	//標準入力の値にがあれば表示なしならエラーメッセージ、EXITで終了させる
+
+
+	public static void main(String[] args) throws IOException{
+
+
+
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+
+		String s="";
+
+		boolean loop=true;
+
+
+
+		while(loop==true){//EXIT入力まで繰り返し
+
+		 System.out.print(">");
+		 s = in.readLine();//標準入力からの入力を受け取る
+
+		 if(s.length()==0){//入力値が0
+			System.out.println("エラー");
+		 }
+
+		 else if(s.equals("EXIT")){//EXITで終了
+
+			loop=false;
+			break;
+		 }
+		 else {//文字なら表示
+			 System.out.println(s);
+			loop=true;
+		 }
+		}
+
+	}
+
+}
