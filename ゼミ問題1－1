@@ -1,0 +1,5 @@
+public static String normalize(String str) {
+	
+		String s=str.trim();
+		return s.toUpperCase(); 
+	}
