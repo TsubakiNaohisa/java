@@ -1,0 +1,19 @@
+public static String reverse(String str) {
+		char[] a = new char[str.length()];
+		for(int i=0;i<str.length();i++){
+			a[i]=str.charAt(i);
+		} 
+		
+		StringBuilder sb = new StringBuilder();
+		for(int i=str.length();0<i;i--){
+		char s=a[i-1];
+			sb.append(s);
+		}
+		
+		String mozi=sb.toString();
+		
+		
+
+
+		return mozi; 
+	}
