@@ -1,0 +1,12 @@
+public static String signed(int n) {
+		final String format = "%,+d";
+		final String format1 = "%d";
+		String s=null;
+		if(!(n==0)){
+		s= String.format(format, n);
+		}
+		else{
+			s=String.format(format1,n);
+		}
+		return s; 
+	}
