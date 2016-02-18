@@ -1,0 +1,14 @@
+public static boolean validate(String str) {
+		
+		
+		if(str.matches("[01][0-5][eE][cC][0-9]{3}")){
+			if(str.matches("[01][0-5][eE][cC][0]{3}")){
+				return false;
+			}
+			else{
+				return true;
+			}
+			
+		}
+		return false; 
+	}
