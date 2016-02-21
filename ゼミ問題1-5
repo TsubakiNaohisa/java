@@ -1,0 +1,8 @@
+public static String[] extract(String str) {
+		String[] s = null;
+		str=str.replaceAll("[^0-9a-zA-Z ]","");
+	 s = str.split(" ");
+
+
+		return s; 
+	}
