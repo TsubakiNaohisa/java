@@ -1,0 +1,10 @@
+
+	public static String tsToString(long ts) {
+		
+		Date date = new Date(ts);
+	    SimpleDateFormat now = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		
+	    String s= now.format(date);
+
+		return s; 
+	}
