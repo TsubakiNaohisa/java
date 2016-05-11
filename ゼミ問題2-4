@@ -1,0 +1,10 @@
+public static String afterDays(String date, int num) {
+		
+		DateTimeFormatter f = DateTimeFormatter.ofPattern("yyyyMMdd");
+		
+		LocalDate d = LocalDate.parse(date,f);
+		d=d.plusDays(num);
+		
+		String s= d.format(f);
+		return s; 
+	}
