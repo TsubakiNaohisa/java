@@ -1,0 +1,36 @@
+public static int calcAge(String bod, String now) {
+		
+		DateTimeFormatter f = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+		String bo = bod.substring(0,2);
+		
+		if(bo.matches("[2-9][0-9]")){
+			bod="19"+bod;
+			
+		}
+		else{
+			bod="20"+bod;
+		
+		}
+		
+		String no = now.substring(0,2);
+		if(now.matches("[2-9][1-9]")){
+			now="19"+now;
+			
+		}
+		else{
+			now="20"+now;
+	
+		}
+		
+		LocalDate d1 = LocalDate.parse(bod,f);
+		LocalDate d2 = LocalDate.parse(now,f);		
+		
+		Period p1 = Period.between(d1,d2);
+		
+		
+		
+		int a = p1.getYears();//Integer.parseInt(ans);
+
+
+		return a; // もし必要なければこの行を削除すること
+	}
